@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Loca Share — Dama Code</title>
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+
+  /* Hero Section */
+  h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  h1 .highlight {
+    background: linear-gradient(135deg,#a855f7 0%,#ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p.tagline {
+    font-size: 1.2em;
+    color: #9ca3af;
+    margin-bottom: 18px;
+  }
+
+  /* Simple Features Line */
+  .features-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    margin: 0 0 40px 0;
+    color: #cbd5e1;
+    font-size: 0.98em;
+  }
+
+  .features-line .sep {
+    opacity: 0.35;
+  }
+
+  /* App Card */
+  .app-card {
+    display: inline-block;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 24px;
+    padding: 60px 40px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .app-card:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+    background: #1a1a1a;
+  }
+
+  .app-card .app-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .app-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .app-card p {
+    color: #9ca3af;
+    font-size: 1em;
+  }
+
+  /* Screenshot Image */
+  .app-screenshot {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+  }
+
+  /* App Store Button */
+  .app-store-btn {
+    margin-top: 60px;
+    display: inline-block;
+  }
+
+  .app-store-btn img {
+    height: 50px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 100px;
+    font-size: 0.85em;
+    color: #6b7280;
+  }
+
+  footer a {
+    color: #6b7280;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width:768px){
+    h1 { font-size:2.5em; }
+    p.tagline { font-size:1em; margin-bottom:30px; }
+    .app-card { padding: 40px 30px; }
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <h1>Introducing <span class="highlight">Loca Share</span></h1>
+  <p class="tagline">Share your Address instantly</p>
+  <div class="features-line" aria-label="Loca Share features">
+    <span>One‑tap Share</span>
+    <span class="sep">|</span>
+    <span>Upload Photos</span>
+    <span class="sep">|</span>
+    <span>Widgets</span>
+    <span class="sep">|</span>
+    <span>Control Center</span>
+    <span class="sep">|</span>
+    <span>100% Private</span>
+  </div>
+
+  <!-- App Card -->
+  <img class="app-screenshot" src="assets/app-screenshot.png" alt="Loca Share app screenshot on iPhone" />
+
+  <!-- App Store Button -->
+  <div class="app-store-btn">
+    <a href="https://apps.apple.com/app/zam-calendar/idYOUR_APP_ID">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dama Code • <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
